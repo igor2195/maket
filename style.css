@@ -37,6 +37,13 @@ li::before{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+p{
+	font-weight: bold;
+}
+
+ul:first-line{
+	font-weight: bold;
+}
 
 	
 	
