@@ -132,14 +132,24 @@
                 </div>
                 <section class="send-feedback">
                     <p><b>Напишите ответ на отзыв</b></p>
-                    <textarea class="send-fb"></textarea>
+                    <textarea class="send-fb" id="txtarea"></textarea>
+                    <input type="button" class="clear_fb_button" id="button_clear"/>
                     <button class="send-feedback-button">Опубликовать</button>
                 </section>
             </section>
         </div>
     </main>                
     <footer class="footer">
-        <div class="all-feedback"><a href="#">Все 134 отзыва</a></div>
+        <div class="all-feedback"><a href="#">Все 134 отзывов</a></div>
     </footer>
 </body>
+    <script>
+        var button = document.getElementById('button_clear');
+        var textarea = document.getElementById('txtarea');
+
+        button.onclick = function(){
+            textarea.value="";
+        }
+
+    </script>
 </html>

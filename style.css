@@ -5,6 +5,7 @@ body{
     margin: 14px 12px 0px 82px;
     width: 1257px;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 
 a{
@@ -230,7 +231,7 @@ time{
     right: -6px;
     width: 0;
     height: 0;
-    content: '';
+    content: '\00A0';
     border: 20px solid transparent;
     border-left: 20px solid #fccd00;
     border-left-width: 20px;
@@ -322,6 +323,7 @@ time{
     display: flex;
     flex-direction: column;
     margin-top: 14px;
+    position: relative;
 }
 
 .send-feedback p{
@@ -332,8 +334,20 @@ time{
     margin-top: 9px;
     resize: none;
     height: 88px;
-    width: 458px;
+    width: 440px;
     padding: 5px;
+    padding-right: 23px;
+}
+
+.clear_fb_button{
+    position: absolute;
+    left: 445px;
+    top: 30px;
+    background: 50% 50% no-repeat;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2214%22 height%3D%2214%22%3E%3Cpath d%3D%22M14 .7l-.7-.7L7 6.3.7 0 0 .7 6.3 7 0 13.3l.7.7L7 7.7l6.3 6.3.7-.7L7.7 7z%22%2F%3E%3C%2Fsvg%3E");
 }
 
 .send-feedback-button{
@@ -356,14 +370,18 @@ time{
     align-items: center;
     position: relative;
     top: -4px;
-    width: 453px;
+    width: 472px;
     height: 38px;
     background-color: #f2f1ed;
     border: 2px solid #f1f0ee;
     border-radius: 5px;
     margin-bottom: 52px;
-    margin-left: 228px; 
-    padding-left: 16px;
+    margin-left: 226px;
+    padding-left: 0px;
     font-size: 15px;
-    font-weight: 600;
+}
+
+.all-feedback a{
+    padding-left: 14px;
+    padding-bottom: 2px;
 }
